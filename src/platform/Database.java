@@ -19,6 +19,7 @@ public class Database {
     // STATIC INNER CLASSES TO MODEL
     // ENTITIES IN THE DATABASE
     //------------------------------
+    
     // TODO: separate classes to different files
     private static class UserDB {
 
