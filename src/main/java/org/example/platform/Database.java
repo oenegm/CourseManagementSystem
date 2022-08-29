@@ -199,7 +199,7 @@ public class Database {
 
         // the path where storage text file exists on hard drive
         // TODO: URIs shouldn't be hardcoded
-        private static final String filePath = "D:\\Buffer\\CourseManagementSystem-main\\databases\\Chat.txt";
+        private static final String filePath = "D:\\Computer Science\\Java Spring\\Projects\\CourseManagementSystem\\database\\Chat.txt";
 
         public static void chatHistory() {
             System.out.println();
@@ -261,14 +261,17 @@ public class Database {
     private MaterialDB projects;
 
     public Database() {
+
+        // TODO: URIs shouldn't be hardcoded
+
         // users
-        adminsAccounts      = new UserDB("D:\\Buffer\\CourseManagementSystem-main\\databases\\AdminsAccounts.txt");
-        instructorsAccounts = new UserDB("D:\\Buffer\\CourseManagementSystem-main\\databases\\InstructorsAccounts.txt");
-        studentsAccounts    = new UserDB("D:\\Buffer\\CourseManagementSystem-main\\databases\\StudentsAccounts.txt");
+        adminsAccounts      = new UserDB("D:\\Computer Science\\Java Spring\\Projects\\CourseManagementSystem\\database\\AdminsAccounts.txt");
+        instructorsAccounts = new UserDB("D:\\Computer Science\\Java Spring\\Projects\\CourseManagementSystem\\database\\InstructorsAccounts.txt");
+        studentsAccounts    = new UserDB("D:\\Computer Science\\Java Spring\\Projects\\CourseManagementSystem\\database\\StudentsAccounts.txt");
 
         // materials
-        courses  = new MaterialDB("D:\\Buffer\\CourseManagementSystem-main\\databases\\AvailableCourses.txt");
-        projects = new MaterialDB("D:\\Buffer\\CourseManagementSystem-main\\databases\\SubmittedProjects.txt");
+        courses  = new MaterialDB("D:\\Computer Science\\Java Spring\\Projects\\CourseManagementSystem\\database\\AvailableCourses.txt");
+        projects = new MaterialDB("D:\\Computer Science\\Java Spring\\Projects\\CourseManagementSystem\\database\\SubmittedProjects.txt");
     }
 
     public void connect() {
